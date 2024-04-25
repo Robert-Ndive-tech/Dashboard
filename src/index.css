@@ -12,7 +12,8 @@
   }
 }
 .dash {
-  background-color: bisque;
+  background-color: white;
+  position: relative;
 }
 .search-input {
   display: flex;
@@ -24,4 +25,17 @@
   margin-top: 20px;
   margin-left: 30%;
   background-color: white;
+}
+
+.maindash {
+  background-color: rgb(50, 50, 55);
+  position: relative;
+}
+
+.Tophead {
+  background-color: #ffffff;
+  color: black;
+  height: 8vh;
+  margin-top: 8vh;
+  width: 100vw;
 }

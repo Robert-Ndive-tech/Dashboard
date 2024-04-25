@@ -1,6 +1,6 @@
 .Top {
   background-color: #3d6bf7;
-  color: white;
+  color: rgb(171, 17, 17);
   justify-content: baseline;
   text-align: center;
   height: 8vh;
@@ -11,12 +11,12 @@
   position: fixed;
 }
 .Side {
-  background-color: white;
+  background-color: rgb(127, 17, 17);
   width: 20vw;
-  height: 100vh;
+  height: 900vh;
   position: fixed;
   z-index: 1;
-  margin-top: 2vh;
+  margin-top: 5vh;
   padding-top: 0x;
 }
 
@@ -49,15 +49,6 @@
   border-radius: 20px;
   top: 20%;
   background-color: #ffffff;
-}
-.Tophead {
-  background-color: #ffffff;
-  color: black;
-  height: 8vh;
-  margin-top: 8vh;
-  align-content: center;
-  text-align: left;
-  margin-left: 285px;
 }
 
 .row_container {
