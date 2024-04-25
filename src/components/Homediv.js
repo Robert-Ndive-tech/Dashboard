@@ -10,9 +10,10 @@ import "../../src/index.css";
 import Rightdiv from "./Rightdiv";
 import Bottomdiv from "./Bottomdiv";
 import MyGraph from "./Grapht";
+import MyEntryStatisticsChart from "../Test/graph56";
 const Homediv = () => {
   return (
-    <div className="container  bg-gradient-to-b max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+    <div className="container ">
       <div className="Top">
         <img
           src={me}
@@ -59,7 +60,9 @@ const Homediv = () => {
             </div>
           </div>
 
-          <div className="Box3"></div>
+          <div className="Box3">
+            <MyEntryStatisticsChart />
+          </div>
 
           <div className="Box4">
             <img src={Fvech} alt="imagea" width={300} height={100} />

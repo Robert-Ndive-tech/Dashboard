@@ -15,3 +15,16 @@ don {
   /* Style on hover */
   background-color: rgba(0, 204, 0, 0.7); /* Slightly darker green on hover */
 }
+
+.chart {
+  background-color: azure;
+}
+
+/* In your CSS file */
+.custom-x-axis .recharts-text {
+  color: #e01010; /* Example color, adjust as needed */
+}
+
+#xaxis {
+  color: #e01010;
+}
