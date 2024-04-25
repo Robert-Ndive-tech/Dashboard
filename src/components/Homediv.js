@@ -59,9 +59,7 @@ const Homediv = () => {
             </div>
           </div>
 
-          <div className="Box3">
-            <MyGraph />
-          </div>
+          <div className="Box3"></div>
 
           <div className="Box4">
             <img src={Fvech} alt="imagea" width={300} height={100} />

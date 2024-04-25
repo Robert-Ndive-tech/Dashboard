@@ -1,66 +1,61 @@
-import React, { useState, useEffect } from "react";
-import Plotly from "react-plotly.js"; // Assuming using plotly.js-basic for size reduction
+import React, { useState, useEffect, useRef } from "react";
+import * as d3 from "d3";
 
-const MyChart = ({ data }) => {
-  const [chart, setChart] = useState(null);
+const LineChart = ({ data }) => {
+  const [chartData, setChartData] = useState(data); // Your data
+  const svgRef = useRef(null); // Ref for the SVG element
 
   useEffect(() => {
-    if (data && data.length > 0) {
-      const downsampledData = downsampleData(data, 0.5); // Reduce data points by 50%
-      const trace = {
-        x: downsampledData.x,
-        y: downsampledData.y,
-        mode: "lines",
-        marker: {
-          size: 4, // Adjust marker size as desired
-        },
-      };
+    const margin = { top: 20, right: 20, bottom: 30, left: 50 };
+    const width = 600 - margin.left - margin.right;
+    const height = 400 - margin.top - margin.bottom;
 
-      const layout = {
-        title: "My Curve",
-        xaxis: { title: "X-Axis" },
-        yaxis: { title: "Y-Axis" },
-        margin: {
-          // Reduce layout margins for tighter fit
-          t: 20,
-          r: 10,
-          b: 20,
-          l: 10,
-        },
-      };
+    const svg = d3
+      .select(svgRef.current)
+      .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom);
 
-      const config = {
-        // Reduce default font size for smaller size
-        responsive: true,
-        font: {
-          size: 10,
-        },
-      };
+    const g = svg
+      .append("g")
+      .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
-      Plotly.newPlot("myChart", [trace], layout, config);
-      setChart(true); // Indicate chart is rendered
-    }
-  }, [data]);
+    // Define scales based on your data
+    const xScale = d3
+      .scaleLinear()
+      .domain([0, d3.max(data, (d) => d.x)])
+      .range([0, width]);
+    const yScale = d3
+      .scaleLinear()
+      .domain([0, d3.max(data, (d) => d.y)])
+      .range([height, 0]);
 
-  const downsampleData = (data, ratio) => {
-    const sampleSize = Math.floor(data.length * ratio);
-    const newData = {
-      x: [],
-      y: [],
-    };
-    for (let i = 0; i < sampleSize; i++) {
-      const index = Math.floor((i * (data.length - 1)) / (sampleSize - 1));
-      newData.x.push(data[index].x);
-      newData.y.push(data[index].y);
-    }
-    return newData;
-  };
+    // Draw the axes
+    const xAxis = d3.axisBottom(xScale);
+    g.append("g").attr("transform", `translate(0, ${height})`).call(xAxis);
+
+    const yAxis = d3.axisLeft(yScale);
+    g.append("g").call(yAxis);
+
+    // Draw the line using a path element
+    const line = d3
+      .line()
+      .x((d) => xScale(d.x))
+      .y((d) => yScale(d.y));
+
+    g.append("path")
+      .datum(data) // Bind data to the path element
+      .attr("fill", "none")
+      .attr("stroke", "blue")
+      .attr("stroke-width", 1.5)
+      .attr("d", line);
+  }, [data]); // Update chart on data change
 
   return (
-    <div id="myChart" style={{ width: "400px", height: "300px" }}>
-      {chart}
+    <div>
+      <svg ref={svgRef} />
     </div>
   );
 };
 
-export default MyChart;
+export default LineChart;
