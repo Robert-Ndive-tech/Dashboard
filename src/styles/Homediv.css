@@ -20,16 +20,6 @@
   padding-top: 0x;
 }
 
-.Box1 {
-  background-color: white;
-  position: absolute;
-  left: 300px;
-  top: 20%;
-  height: 30vh;
-  width: 300px;
-  border-radius: 20px;
-}
-
 .Box2 {
   background-color: white;
   position: absolute;
@@ -40,45 +30,57 @@
   border-radius: 20px;
 }
 
-.center1 {
-  height: 32vh;
-  width: 20vw;
-  position: relative;
-  margin-left: 100vh;
-  align-items: flex-end;
-  margin-top: 2vw;
-  border-radius: 20px;
-  top: 20%;
-  background-color: #ffffff;
-}
-
 .row_container {
   display: flex;
   flex-direction: row;
   overflow-x: hidden;
 }
 
-.Box4 {
-  background-color: white;
-  position: absolute;
-  left: 1000px;
-  top: 20%;
-  height: 30vh;
-  width: 300px;
+.center1 {
+  height: 32vh;
+  width: 20vw;
+  position: relative;
+  margin-right: 5vw;
+  align-items: flex-end;
+  margin-top: 2vw;
   border-radius: 20px;
+
+  background-color: #ffffff;
+}
+
+.Box1 {
+  height: 32vh;
+  width: 20vw;
+  position: relative;
+  margin-left: 6vw;
+  margin-right: 5vw;
+  margin-top: 2vw;
+  border-radius: 20px;
+  align-items: flex-end;
+  background-color: #ffffff;
+}
+
+.Box4 {
+  height: 32vh;
+  width: 20vw;
+  position: relative;
+  align-items: flex-end;
+  margin-top: 2vw;
+  border-radius: 20px;
+
+  background-color: #ffffff;
 }
 /* Here is the middle box funtionality*/
 .Box3 {
-  background-color: #ffffff;
-  position: absolute;
-  left: 300px;
-  top: 55%;
-
-  height: 48vh;
-  width: 50vw;
+  height: 32vh;
+  width: 20vw;
+  position: relative;
+  margin-left: 30vh;
+  align-items: flex-end;
+  margin-top: 2vw;
   border-radius: 20px;
-  justify-content: center;
-  align-content: center;
+  top: 20%;
+  background-color: #ffffff;
 }
 
 .Box5 {
@@ -155,19 +157,18 @@
 
 .num {
   position: relative;
-
   font-size: 4em;
   color: #040813;
   font-weight: bolder;
-  text-align: center;
-  align-content: first baseline;
+  text-align: left;
+  margin-left: 3vh;
+  align-content: flex-end;
   font-family: "Times New Roman", Times, serif;
 }
 
 .button {
   position: relative;
   width: 80px;
-  display: inline-block;
   height: 30px;
   border-radius: 5px;
   align-content: center;
@@ -182,7 +183,7 @@
   color: white; /* Text color for readability */
   padding: 10px 20px; /* Adjust padding as desired */
   cursor: pointer; /* Indicate interactivity */
-  border-radius: 5px; /* Add rounded corners (optional) */
+  border-radius: 5px;
 }
 
 .lighthover {
@@ -196,11 +197,15 @@
   color: white; /* Text color for readability */
   padding: 10px 20px; /* Adjust padding as desired */
   cursor: pointer; /* Indicate interactivity */
-  border-radius: 5px; /* Add rounded corners (optional) */
+  border-radius: 5px;
+  margin-left: 200px;
+  position: absolute;
+  right: 100px;
+  top: 17vh; /* Add rounded corners (optional) */
 }
 
 #me {
-  margin-top: 5%;
+  margin-top: 1%;
   font-size: smaller;
   font-family: Arial, Helvetica, sans-serif;
 }
