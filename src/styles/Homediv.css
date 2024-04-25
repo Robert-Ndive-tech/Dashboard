@@ -1,0 +1,225 @@
+.Top {
+  background-color: #3d6bf7;
+  color: white;
+  justify-content: baseline;
+  text-align: center;
+  height: 8vh;
+  width: 100vw;
+  justify-content: center;
+  align-content: centers;
+  z-index: 2;
+  position: fixed;
+}
+.Side {
+  background-color: white;
+  width: 20vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  margin-top: 2vh;
+  padding-top: 0x;
+}
+
+.Box1 {
+  background-color: white;
+  position: absolute;
+  left: 300px;
+  top: 20%;
+  height: 30vh;
+  width: 300px;
+  border-radius: 20px;
+}
+
+.Box2 {
+  background-color: white;
+  position: absolute;
+  left: 1000px;
+  top: 20%;
+  height: 30vh;
+  width: 300px;
+  border-radius: 20px;
+}
+
+.center1 {
+  height: 30vh;
+  width: 300px;
+  position: absolute;
+  left: 650px;
+  align-items: flex-end;
+  border-radius: 20px;
+  top: 20%;
+  background-color: #ffffff;
+}
+.Tophead {
+  background-color: #ffffff;
+  color: black;
+  height: 8vh;
+  margin-top: 8vh;
+  align-content: center;
+  text-align: left;
+  margin-left: 285px;
+}
+
+.row_container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+}
+
+.Box4 {
+  background-color: white;
+  position: absolute;
+  left: 1000px;
+  top: 20%;
+  height: 30vh;
+  width: 300px;
+  border-radius: 20px;
+}
+/* Here is the middle box funtionality*/
+.Box3 {
+  background-color: #ffffff;
+  position: absolute;
+  left: 300px;
+  top: 55%;
+
+  height: 48vh;
+  width: 50vw;
+  border-radius: 20px;
+  justify-content: center;
+  box-sizing: border-box;
+  align-content: center;
+}
+
+.Box5 {
+  background-color: #ffffff;
+  position: absolute;
+  left: 1000px;
+  top: 55%;
+  height: 48vh;
+  width: 23vw;
+
+  border-radius: 20px;
+}
+/*Bottom Div design*/
+.Box6 {
+  background-color: #ffffff;
+  position: absolute;
+  left: 23vw;
+  top: 110%;
+  height: 50vh;
+  width: 76vw;
+
+  border-radius: 20px;
+}
+
+.board {
+  background-color: black;
+}
+
+.container {
+  display: flex; /* Allow fixed header and scrollable content side-by-side */
+  flex-direction: column;
+  /* Stack elements vertically */
+  overflow-x: hidden;
+}
+.Box1,
+.Box2,
+.Box3,
+.Box4,
+.Box5,
+.Box6,
+.center1 {
+  z-index: 0;
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+  width: 300px; /* Adjust width as needed */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-top: 20px;
+  margin-left: 30%;
+  background-color: white;
+}
+
+.search-input input {
+  flex: 1;
+  border: none;
+  outline: none;
+}
+
+.search-input button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.Box4,
+.center1,
+.Box1 {
+  margin-bottom: 200px;
+}
+
+.num {
+  position: absolute;
+  top: 30%;
+  right: 70%;
+  font-size: 4em;
+  color: #040813;
+  font-weight: bolder;
+  text-align: center;
+  align-content: first baseline;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.button {
+  position: absolute;
+  top: 68%;
+  right: 40%;
+  width: 80px;
+  height: 25px;
+  border-radius: 5px;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.light-button {
+  background-color: rgba(0, 204, 0, 0.5); /* Adjust transparency as needed */
+  border: none; /* Remove default border */
+  color: white; /* Text color for readability */
+  padding: 10px 20px; /* Adjust padding as desired */
+  cursor: pointer; /* Indicate interactivity */
+  border-radius: 5px; /* Add rounded corners (optional) */
+}
+
+.lighthover {
+  /* Style on hover */
+  background-color: rgba(0, 204, 0, 0.7); /* Slightly darker green on hover */
+}
+
+.light-button1 {
+  background-color: rgba(208, 20, 39, 0.5); /* Adjust transparency as needed */
+  border: none; /* Remove default border */
+  color: white; /* Text color for readability */
+  padding: 10px 20px; /* Adjust padding as desired */
+  cursor: pointer; /* Indicate interactivity */
+  border-radius: 5px; /* Add rounded corners (optional) */
+}
+
+#me {
+  margin-top: 30%;
+  font-size: smaller;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#me1 {
+  color: red;
+}
+
+#me2 {
+  color: rgba(0, 204, 0, 0.7);
+}

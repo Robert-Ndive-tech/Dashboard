@@ -1,0 +1,17 @@
+don {
+  width: 300px;
+}
+
+.light-green-transparent-button {
+  background-color: rgba(0, 204, 0, 0.5); /* Adjust transparency as needed */
+  border: none; /* Remove default border */
+  color: white; /* Text color for readability */
+  padding: 10px 20px; /* Adjust padding as desired */
+  cursor: pointer; /* Indicate interactivity */
+  border-radius: 5px; /* Add rounded corners (optional) */
+}
+
+.light-green-transparent-button:hover {
+  /* Style on hover */
+  background-color: rgba(0, 204, 0, 0.7); /* Slightly darker green on hover */
+}
