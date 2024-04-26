@@ -28,8 +28,9 @@
 }
 
 .maindash {
-  background-color: rgb(50, 50, 55);
+  background-color: rgb(150, 148, 148);
   position: relative;
+  height: 100vh;
 }
 
 .Tophead {

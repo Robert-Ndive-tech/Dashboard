@@ -14,3 +14,9 @@ table {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
 }
+
+h1 {
+  font-size: xx-large;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+}

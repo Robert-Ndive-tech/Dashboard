@@ -6,6 +6,10 @@ import Sidediv from "../Sidediv";
 import vehicles from "../../assets/vehicles.png";
 import Fvech from "../../assets/Fvehicles.png";
 import "../../styles/Homediv.css";
+import MyCurveChart from "../../Test/graph3";
+import MyEntryStatisticsChart from "../../Test/graph56";
+import Rightdiv from "../Rightdiv";
+import Bottomdiv from "../Bottomdiv";
 const Dashboard = () => {
   return (
     <div className="dash" style={{ display: "flex" }}>
@@ -26,12 +30,12 @@ const Dashboard = () => {
       <div style={{ flex: 1 }}>
         <Sidediv />
       </div>
-      <div style={{ flex: 5 }} className="maindash">
+      <div style={{ flex: 6, height: 1300 }} className="maindash">
         <div className="Tophead">
           <h2>VVMS Dashboard</h2>
         </div>
         <div style={{ display: "inline-block" }}>
-          <table>
+          <table style={{ margingTop: 300 }}>
             <head></head>
             <tbody>
               <td>
@@ -80,6 +84,25 @@ const Dashboard = () => {
               </td>
             </tbody>
           </table>
+          <div>
+            <table>
+              <tbody>
+                <td>
+                  <div className="Box3">
+                    <MyEntryStatisticsChart />
+                  </div>
+                </td>
+                <td>
+                  <div className="Box5">
+                    <Rightdiv />
+                  </div>
+                </td>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div className="Box6">
+          <Bottomdiv />
         </div>
       </div>
     </div>

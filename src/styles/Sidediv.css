@@ -8,11 +8,16 @@
 
 .container1 {
   padding-top: 8vw;
-  height: 100vh;
-
+  height: 200vh;
+  position: fixed;
   text-align: center;
+  z-index: 2;
+  background-color: white;
 }
-
+table {
+  padding: 0 0;
+  margin-bottom: 0;
+}
 .pox {
   background-color: #3d6bf7;
   margin-left: 30px;

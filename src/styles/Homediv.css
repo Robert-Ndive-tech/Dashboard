@@ -7,7 +7,7 @@
   width: 100vw;
   justify-content: center;
   align-content: centers;
-  z-index: 2;
+  z-index: 1;
   position: fixed;
 }
 .Side {
@@ -15,9 +15,10 @@
   width: 20vw;
   height: 900vh;
   position: fixed;
-  z-index: 1;
+
   margin-top: 5vh;
   padding-top: 0x;
+  z-index: ;
 }
 
 .Box2 {
@@ -72,37 +73,34 @@
 }
 /* Here is the middle box funtionality*/
 .Box3 {
-  height: 32vh;
-  width: 20vw;
+  height: 48vh;
+  width: 46vw;
   position: relative;
-  margin-left: 30vh;
-  align-items: flex-end;
-  margin-top: 2vw;
+  margin-left: 10vh;
+  align-items: self-end;
+  margin-top: 25;
   border-radius: 20px;
-  top: 20%;
   background-color: #ffffff;
 }
 
 .Box5 {
   background-color: #ffffff;
-  position: absolute;
-  left: 1000px;
-  top: 55%;
+  position: relative;
+  margin-left: 8vh;
   height: 48vh;
-  width: 23vw;
 
+  width: 20vw;
   border-radius: 20px;
 }
 /*Bottom Div design*/
 .Box6 {
   background-color: #ffffff;
-  position: absolute;
-  left: 23vw;
-  top: 110%;
-  height: 50vh;
-  width: 76vw;
-
+  height: 60vh;
+  width: 70vw;
+  position: relative;
   border-radius: 20px;
+  margin-left: 10vh;
+  margin-top: 3em;
 }
 
 .board {

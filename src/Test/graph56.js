@@ -17,7 +17,6 @@ const data = [
   { month: "Thur", visitors: 100, vehicles: 90 },
   { month: "Fri", visitors: 280, vehicles: 70 },
   { month: "Sat", visitors: 107, vehicles: 60 },
-  { month: "Sun", visitors: 80, vehicles: 60 },
 ];
 
 const MyEntryStatisticsChart = () => {

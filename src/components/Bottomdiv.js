@@ -62,7 +62,7 @@ const MyTable = () => {
         {data.map((item) => (
           <tr key={item.name}>
             <td id="rowb">
-              <img src={car} width={50} height={50} alt="imageh" />
+              <img src={car} width={300} height={300} alt="imageh" />
             </td>
             <td id="rowb">
               <span>

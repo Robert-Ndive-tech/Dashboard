@@ -60,9 +60,7 @@ const Homediv = () => {
             </div>
           </div>
 
-          <div className="Box3">
-            <MyEntryStatisticsChart />
-          </div>
+          <div className="Box3"></div>
 
           <div className="Box4">
             <img src={Fvech} alt="imagea" width={300} height={100} />
@@ -74,14 +72,8 @@ const Homediv = () => {
               </p>
             </div>
           </div>
-          <div className="Box5">
-            8
-            <Rightdiv />
-          </div>
-          <div className="Box6">
-            9
-            <Bottomdiv />
-          </div>
+          <div className="Box5">8</div>
+          <div className="Box6">9</div>
         </div>
       </div>
     </div>
