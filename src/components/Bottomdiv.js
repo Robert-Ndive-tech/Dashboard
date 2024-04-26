@@ -41,15 +41,6 @@ const data = [
     description: "Visit for site seeing",
     icon: "i",
   },
-  {
-    image: car,
-    name: "Tabe Lilan",
-    time: "26/03/2024- 8:00AM",
-    id: "IDCR11575950",
-    place: "Small Soppo,Buea",
-    description: "Visit for site seeing",
-    icon: "i",
-  },
 ];
 
 const MyTable = () => {
