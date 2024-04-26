@@ -7,7 +7,7 @@
   width: 100vw;
   justify-content: center;
   align-content: centers;
-  z-index: 1;
+  z-index: 5;
   position: fixed;
 }
 .Side {
@@ -18,7 +18,7 @@
 
   margin-top: 5vh;
   padding-top: 0x;
-  z-index: ;
+  z-index: 2;
 }
 
 .Box2 {
@@ -38,7 +38,7 @@
 }
 
 .center1 {
-  height: 32vh;
+  height: 36vh;
   width: 20vw;
   position: relative;
   margin-right: 5vw;
@@ -50,7 +50,7 @@
 }
 
 .Box1 {
-  height: 32vh;
+  height: 36vh;
   width: 20vw;
   position: relative;
   margin-left: 6vw;
@@ -62,7 +62,7 @@
 }
 
 .Box4 {
-  height: 32vh;
+  height: 36vh;
   width: 20vw;
   position: relative;
   align-items: flex-end;
@@ -95,7 +95,7 @@
 /*Bottom Div design*/
 .Box6 {
   background-color: #ffffff;
-  height: 60vh;
+  height: 50vh;
   width: 70vw;
   position: relative;
   border-radius: 20px;

@@ -8,10 +8,11 @@
 
 .container1 {
   padding-top: 8vw;
-  height: 200vh;
+  height: 150vh;
   position: fixed;
   text-align: center;
-  z-index: 2;
+  z-index: 1;
+
   background-color: white;
 }
 table {

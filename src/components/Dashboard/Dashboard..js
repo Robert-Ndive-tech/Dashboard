@@ -32,7 +32,7 @@ const Dashboard = () => {
       </div>
       <div style={{ flex: 6, height: 1300 }} className="maindash">
         <div className="Tophead">
-          <h2>VVMS Dashboard</h2>
+          <h1>VVMS Dashboard</h1>
         </div>
         <div style={{ display: "inline-block" }}>
           <table style={{ margingTop: 300 }}>
