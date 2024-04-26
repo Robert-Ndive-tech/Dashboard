@@ -78,7 +78,7 @@
   position: relative;
   margin-left: 10vh;
   align-items: self-end;
-  margin-top: 25;
+
   border-radius: 20px;
   background-color: #ffffff;
 }
@@ -150,7 +150,7 @@
 .Box4,
 .center1,
 .Box1 {
-  margin-bottom: 200px;
+  margin-bottom: 3vw;
 }
 
 .num {
@@ -196,10 +196,6 @@
   padding: 10px 20px; /* Adjust padding as desired */
   cursor: pointer; /* Indicate interactivity */
   border-radius: 5px;
-  margin-left: 200px;
-  position: absolute;
-  right: 100px;
-  top: 17vh; /* Add rounded corners (optional) */
 }
 
 #me {
@@ -214,4 +210,17 @@
 
 #me2 {
   color: rgba(0, 204, 0, 0.7);
+}
+
+table.table1 {
+  background-color: rgb(68, 68, 152);
+  padding-bottom: 0px;
+  align-content: center;
+  padding: 0px;
+  margin: 0;
+  border: 0;
+}
+
+div {
+  padding: 0;
 }

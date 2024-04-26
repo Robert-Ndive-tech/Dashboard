@@ -1,15 +1,18 @@
 import React from "react";
 import "../../index.css";
 import me from "../../assets/image1.png";
-import vistor from "../../assets/Visitors.png";
+import profile from "../../assets/blueprofile.png";
+import setting from "../../assets/bluesetting.png";
+import bell from "../../assets/bell.png";
+import search from "../../assets/search.png";
 import Sidediv from "../Sidediv";
-import vehicles from "../../assets/vehicles.png";
-import Fvech from "../../assets/Fvehicles.png";
+
 import "../../styles/Homediv.css";
-import MyCurveChart from "../../Test/graph3";
+
 import MyEntryStatisticsChart from "../../Test/graph56";
 import Rightdiv from "../Rightdiv";
 import Bottomdiv from "../Bottomdiv";
+import Threebox from "../Threebox";
 const Dashboard = () => {
   return (
     <div className="dash" style={{ display: "flex" }}>
@@ -19,11 +22,57 @@ const Dashboard = () => {
           alt="logo"
           width={180}
           height={60}
-          className="image"
+          className="image1"
           style={{ float: "left" }}
         />
         <div className="search-input">
-          <input type="text" placeholder="Search..." name="my" />
+          <img
+            src={search}
+            alt="logo"
+            width={25}
+            height={10}
+            className="image"
+            style={{ display: "inline-block", verticalAlign: "middle" }}
+          />
+          <input
+            type="text"
+            placeholder="Search...."
+            name="my"
+            style={{ display: "inline-block" }}
+          />
+        </div>
+        <div style={{ float: "right" }} className="middle">
+          {" "}
+          <img
+            src={bell}
+            alt="logo"
+            width={40}
+            height={10}
+            className="image"
+            style={{ display: "inline-block", verticalAlign: "middle" }}
+          />
+          <img
+            src={setting}
+            alt="logo"
+            width={40}
+            height={10}
+            className="image"
+            style={{ display: "inline-block", verticalAlign: "middle" }}
+          />
+          <img
+            src={profile}
+            alt="logo"
+            width={40}
+            height={10}
+            className="image"
+            style={{ display: "inline-block", verticalAlign: "middle" }}
+          />
+          <p
+            className="Heading"
+            style={{ display: "inline-block", color: "black" }}
+          >
+            FON TEBOH
+          </p>
         </div>
       </div>
 
@@ -32,64 +81,32 @@ const Dashboard = () => {
       </div>
       <div style={{ flex: 6, height: 1300 }} className="maindash">
         <div className="Tophead">
-          <h1>VVMS Dashboard</h1>
+          <br />
+
+          <p className="Heading">VVMS Dashboard</p>
         </div>
-        <div style={{ display: "inline-block" }}>
-          <table style={{ margingTop: 300 }}>
-            <head></head>
-            <tbody>
-              <td>
-                <div className="Box1">
-                  <img src={vistor} alt="imagea1" width={300} height={100} />
-                  <div>
-                    <div style={{ display: "block" }}>
-                      <button className="button light-button">1.23</button>
-                      <p className="num">30</p>
-                    </div>
-
-                    <p id="me">
-                      <span id="me2">10%</span> Increase of the Total Employee
-                    </p>
-                  </div>
-                </div>
-              </td>
-
-              <td>
-                <div className="center1">
-                  <img src={vehicles} alt="imagea" width={300} height={100} />
-                  <div>
-                    {" "}
-                    <button className="button light-button">1.23</button>
-                    <p className="num">60</p>
-                    <p id="me">
-                      <span id="me1">10%</span> Decrease of the Total Employee
-                    </p>{" "}
-                  </div>
-                </div>
-              </td>
-              {/*next box */}
-
-              <td>
-                <div className="Box4">
-                  <img src={Fvech} alt="imagea" width={300} height={100} />
-                  <div>
-                    <button className="button light-button1">1.23</button>
-                    <p className="num">90</p>
-
-                    <p id="me">
-                      <span id="me2">10%</span> Increase of the Total Employee
-                    </p>
-                  </div>
-                </div>
-              </td>
-            </tbody>
-          </table>
-          <div>
-            <table>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ flex: 5 }}>
+            <Threebox />
+            <table className="table2">
+              <tbody>
+                <td></td>
+              </tbody>
               <tbody>
                 <td>
                   <div className="Box3">
-                    <h2>Entry Statistics</h2>
+                    <p className="Heading">Entry Statistics</p>
+                    <div className="descripO">
+                      <input type="radio" name="data" className="descrip" />
+                      Visitors
+                      <input
+                        type="radio"
+                        name="data"
+                        className="descrip"
+                        checked
+                      />
+                      Vehicles
+                    </div>
                     <MyEntryStatisticsChart />
                   </div>
                 </td>

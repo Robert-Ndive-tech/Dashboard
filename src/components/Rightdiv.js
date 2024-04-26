@@ -1,13 +1,14 @@
 import React from "react";
 import "../styles/Rightended.css";
+import "../index.css";
 import car from "../assets/car.png";
 const Rightdiv = () => {
   return (
     <div id="bord">
-      <h2>
+      <p className="Heading">
         Recently
         <br /> Login in Vehicles
-      </h2>
+      </p>
       <MyTable />
     </div>
   );
@@ -19,6 +20,7 @@ const data = [
   { image: car, name: "Toyota yaris", time: "20 min ago" },
   { image: car, name: "Toyota Rav", time: "30 min ago" },
   { image: car, name: "Nissan Jeep", time: "40 min ago" },
+  { image: car, name: "Nissan meep", time: "50 min ago" },
 ];
 
 const MyTable = () => {

@@ -7,10 +7,7 @@ import vehicles from "../assets/vehicles.png";
 import Fvech from "./../assets/Fvehicles.png";
 import { FaSearch } from "react-icons/fa";
 import "../../src/index.css";
-import Rightdiv from "./Rightdiv";
-import Bottomdiv from "./Bottomdiv";
-import MyGraph from "./Grapht";
-import MyEntryStatisticsChart from "../Test/graph56";
+
 const Homediv = () => {
   return (
     <div className="container ">

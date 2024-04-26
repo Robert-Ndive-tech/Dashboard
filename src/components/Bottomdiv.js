@@ -1,11 +1,12 @@
 import React from "react";
-import car from "../assets/car.png";
+import car from "../assets/blueperson.png";
 import "../styles/bottomdiv.css";
-
+import "../index.css";
+import dot from "../assets/icondot.png";
 const Bottomdiv = () => {
   return (
     <div>
-      <h1>Recently Logged In Vistors</h1>
+      <p className="Heading">Recently Logged In Vistors</p>
       <MyTable />
     </div>
   );
@@ -21,7 +22,7 @@ const data = [
     id: "IDCR11575950",
     place: "Small Soppo,Buea",
     description: "Visit for site seeing",
-    icon: "i",
+    icon: dot,
   },
   {
     image: car,
@@ -53,20 +54,22 @@ const MyTable = () => {
         {data.map((item) => (
           <tr key={item.name}>
             <td id="rowb">
-              <img src={car} width={300} height={300} alt="imageh" />
+              <img src={car} width={500} height={300} alt="imageh" />
             </td>
             <td id="rowb">
               <span>
                 {item.name}
                 <br />
-                {item.id}
+                <span style={{ color: "#a5b7d6" }}>{item.id}</span>
               </span>
             </td>
 
             <td id="rowb">{item.place}</td>
             <td id="rowb">{item.description}</td>
             <td id="rowb">{item.time}</td>
-            <td id="rowb">{item.icon}</td>
+            <td id="rowb">
+              <img src={dot} width={200} height={200} alt="icon" />
+            </td>
           </tr>
         ))}
       </tbody>

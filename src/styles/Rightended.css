@@ -4,7 +4,7 @@ table {
 
 #row {
   padding: 5px;
-  padding-right: 25px; /* Add padding to cells */
+  padding-right: 10px; /* Add padding to cells */
   /* Add borders for visual separation */
   text-align: left;
   font-family: "Times New Roman", Times, serif; /* Align content to the left (optional) */
