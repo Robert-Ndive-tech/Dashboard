@@ -44,7 +44,7 @@ const Dashboard = () => {
                   <div>
                     <div style={{ display: "block" }}>
                       <button className="button light-button">1.23</button>
-                      <p className="num">90</p>
+                      <p className="num">30</p>
                     </div>
 
                     <p id="me">
@@ -60,7 +60,7 @@ const Dashboard = () => {
                   <div>
                     {" "}
                     <button className="button light-button">1.23</button>
-                    <p className="num">90</p>
+                    <p className="num">60</p>
                     <p id="me">
                       <span id="me1">10%</span> Decrease of the Total Employee
                     </p>{" "}
@@ -89,6 +89,7 @@ const Dashboard = () => {
               <tbody>
                 <td>
                   <div className="Box3">
+                    <h2>Entry Statistics</h2>
                     <MyEntryStatisticsChart />
                   </div>
                 </td>
